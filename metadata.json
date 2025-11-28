@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Goal Vision AI",
+  "description": "An application that helps users visualize their goals by answering a series of questions and generating a personalized video of them achieving that goal using AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

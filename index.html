@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goal Vision AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react/": "https://aistudiocdn.com/react@^19.1.1/",
+          "react": "https://aistudiocdn.com/react@^19.1.1",
+          "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0a0514;
+        background-image: radial-gradient(circle at 25% 25%, rgba(79, 70, 229, 0.2) 0%, rgba(12, 10, 22, 0) 40%),
+                          radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.15) 0%, rgba(12, 10, 22, 0) 35%);
+      }
+      .text-glow {
+        text-shadow: 0 0 8px rgba(196, 181, 253, 0.5);
+      }
+      .text-gradient-purple {
+        background-image: linear-gradient(to right, #a78bfa, #d8b4fe);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .progress-bar-glow {
+        filter: drop-shadow(0 0 6px rgba(124, 58, 237, 0.7));
+      }
+      .card-container {
+        background: rgba(17, 12, 34, 0.5);
+        border: 1px solid rgba(124, 58, 237, 0.3);
+        backdrop-filter: blur(10px);
+        border-radius: 1rem;
+        padding: 2.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
